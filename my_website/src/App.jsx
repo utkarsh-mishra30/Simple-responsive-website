@@ -15,10 +15,10 @@ function App() {
       <Navbar />
       <HashRouter>
       <Switch>
-        <Route exact path="/" component={Homepage}  />
-        <Route exact path="/about" component={About}  />
-        <Route exact path="/skills" component={Skills}  />
-        <Route exact path="/randomvids" component={Randomvids}  />
+        <Route exact path={"/"} component={Homepage}  />
+        <Route exact path={"/about"} component={About}  />
+        <Route exact path={"/skills"} component={Skills}  />
+        <Route exact path={"/randomvids"} component={Randomvids}  />
       </Switch>
       </HashRouter>
       
