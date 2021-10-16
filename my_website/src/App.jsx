@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Homepage from './components/Homepage';
 import About from './components/About';
@@ -13,13 +13,14 @@ function App() {
     <div className="App">
       
       <Navbar />
+      <HashRouter>
       <Switch>
         <Route exact path="/" component={Homepage}  />
         <Route exact path="/about" component={About}  />
         <Route exact path="/skills" component={Skills}  />
         <Route exact path="/randomvids" component={Randomvids}  />
       </Switch>
-
+      </HashRouter>
       
     </div>
   );
